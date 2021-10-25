@@ -14,7 +14,6 @@ public class SpawnManagerX : MonoBehaviour
     public int enemyCount;
     public int waveCount = 1;
 
-
     public GameObject player; 
 
     // Update is called once per frame
@@ -26,7 +25,6 @@ public class SpawnManagerX : MonoBehaviour
         {
             SpawnEnemyWave(waveCount);
         }
-
     }
 
     // Generate random spawn position for powerups and enemy balls
@@ -56,7 +54,6 @@ public class SpawnManagerX : MonoBehaviour
 
         waveCount++;
         ResetPlayerPosition(); // put player back at start
-
     }
 
     // Move player back to position in front of own goal
@@ -65,7 +62,5 @@ public class SpawnManagerX : MonoBehaviour
         player.transform.position = new Vector3(0, 1, -7);
         player.GetComponent<Rigidbody>().velocity = Vector3.zero;
         player.GetComponent<Rigidbody>().angularVelocity = Vector3.zero;
-
     }
-
 }
