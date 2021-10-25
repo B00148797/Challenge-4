@@ -7,12 +7,15 @@ public class EnemyX : MonoBehaviour
     public float speed = 50.0f;
     private Rigidbody enemyRb;
     private GameObject playerGoal;
+    private int enemyCount = 1;
 
     // Start is called before the first frame update
     void Start()
     {
         enemyRb = GetComponent<Rigidbody>();
         playerGoal = GameObject.Find("Player");
+        enemyCount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+        speed = speed + (5 * enemyCount);
     }
 
     // Update is called once per frame
