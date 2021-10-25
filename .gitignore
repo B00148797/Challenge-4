@@ -58,3 +58,6 @@ sysinfo.txt
 # Crashlytics generated file
 crashlytics-build.properties
 
+Challenge 4/Library/Artifacts/*
+Challenge 4/Temp/*
+Challenge 4/Logs/*
